@@ -1,0 +1,122 @@
+@charset "UTF 8";
+/* change background to gray for all the files */
+body {
+  background-color: #f0f0f0;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  color: white;
+  font-size: 150%;
+}
+.banner {
+  background-color: #11233b;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav {
+  background-color: #20416c;
+  padding: 5px;
+  margin-top: 1px;
+}
+
+li a {
+  color: white;
+}
+li {
+  color: white;
+  display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+section {
+  background-color: #bbbbbb;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+main {
+  width: 640px;
+  float: left;
+}
+p{
+  color: blue;
+}
+
+/* change index.html file */
+#welcome {
+  color: red;
+}
+#intro {
+  color:green;
+  font-family: 'Griffy', San-serif;
+}
+aside {
+  background-color: pink;
+  width: 270px;
+  float: right;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+#footone {
+  clear: both;
+  font-family: Courier;
+  font-size: 100%;
+}
+	
+/* change work history */
+article {
+  background-color: gray;
+  margin-top: 5px;
+  padding: 5px;
+}
+#HCL {
+  font-family: 'Griffy';
+}
+#inland {
+  color:purple;
+}
+#foottwo{
+  clear: both;
+  color: green;
+  font-size: 100%;
+}
+
+/* change education history */
+footer{
+  clear:both;
+}
+#education {
+  clear: both;
+}
+#MSEE {
+  clear:both;
+}
+#ed {
+  font-size: 150%;
+  color: green;
+}
+
+#pro {
+  font-family: Helvetica;
+  color: green;
+}
+
+/* change for video file */
+#vidwel {
+  text-align:center;
+}
+#video {
+  text-align: center;
+}
+#vidfoot {
+  clear: both;
+  text-align: center;	
+}
+
+
