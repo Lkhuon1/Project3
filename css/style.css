@@ -118,5 +118,10 @@ footer{
   clear: both;
   text-align: center;	
 }
+/* Add Media Query to make the body background red when screen is smaller */
 
-
+@media screen and (max-width: 700px){
+  body {
+    background-color: red;
+  }
+}
