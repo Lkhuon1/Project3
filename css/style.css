@@ -126,6 +126,11 @@ footer{
   }
 }
 /* slides show */
+#slideShow(
+  width: 700px;
+  height: 200px;
+  margin:0 auto;
+)
 #slideShowContainer {
   border-style: solid;
   border-width: 18px 18px 18px 18px;

@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Griffy"/>
   <link rel="stylesheet" type="text/css" href="css/Normalize.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+  <!-- jQuery library (served from Google) -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="/js/jquery.bxslider.min.js"></script>
+  <!-- bxSlider CSS file -->
+  <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+  <script type="text/javascript" src="/script/jquery-3.2.1.min.js"></script>
   
 </head>
 
@@ -29,7 +35,7 @@
   </nav>
 	
   <div class="slideShowContainer">
-    <ul class = "slideShow">
+    <ul class = "bxslider">
       <li><img src="img/photo01.jpg" /></li>	
       <li><img src="img/photo02.jpg" /></li>
 	  <li><img src="img/photo03.jpg" /></li>
@@ -43,37 +49,13 @@
       <p><a href="mailto:lkhuon1@hawk.iit.edu">lkhuon1@hawk.iit.edu</a></p>
     </address>
   </footer>  
+  
   <script type="text/javascript">
-    $(function(){
-	  var slides = $('.slideShow>li');
-	  var slideCount = 0;
-	  var totalSlides = slides.length;
-	  var slideCache[];
-	  
-	  (function preloader(){
-	    if (slideCount < totalSlides){
-		  //Load images
-		  slideCache[slideCount] = new Image();
-		  slideCache[slideCount].src = slides.eq(slideCount).find('img').attr('src');
-		  slideCache[slideCount].onload = function() {
-		    slideCount++;
-			preload();
-		  }
-		) else {
-		  // Run slides show
-		  slideCount = 0;
-		  slidesShow();
-		}
-	  }());
-	
-	
-	  function slideShow(){
-	    slides.eq(slideCount).fadIn(1000).delay(2000).fadeOut(1000), function(){
-	      slideCount < totalSlides - 1 ? slideCount ++ : slideCount = 0;
-		  slidesShow();
-	    });
-	  }
-	});
+    $(document).ready(function() {
+      $('.bxslider').bxSlider({
+        });
+    });
   </script>
+
 </body>
 </html>
