@@ -125,3 +125,14 @@ footer{
     background-color: red;
   }
 }
+/* Styling for the slides show */
+#slideShowTitle {
+  font-family:  'Griffy', San-serif;
+  font-size: 40px;
+  color: blue;
+  text-align: center;
+}
+.slideShowContainer {
+	text-align: center;
+}
+
